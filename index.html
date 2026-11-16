@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script>/* R14: en móvil la anchura de la página se fija antes de dibujar nada (iOS no la recalcula bien después) */
+    try { if (matchMedia('(pointer: coarse)').matches && !matchMedia('(pointer: fine)').matches && !matchMedia('(orientation: portrait)').matches) { var dw = Math.max(screen.width, screen.height), dh = Math.min(screen.width, screen.height), W = Math.round(Math.max(1280, 640 * dw / dh)), s = (dw / W).toFixed(4); document.querySelector('meta[name=viewport]').setAttribute('content', 'width=' + W + ',initial-scale=' + s + ',minimum-scale=' + s + ',maximum-scale=' + s + ',user-scalable=no,viewport-fit=cover'); } } catch (e) {}
+  </script>
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -14,8 +17,8 @@
   <meta property="og:description" content="Juego 3D gratis en el navegador. Creado por Ylay Jose Rodriguez Martin.">
   <title>UNDERWORLD: CITY EMPIRE · por Ylay Jose Rodriguez Martin</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23161b28'/%3E%3Cpath d='M8 8v10a8 8 0 0 0 16 0V8h-4v10a4 4 0 0 1-8 0V8z' fill='%23ff8a1f'/%3E%3C/svg%3E">
-  <script type="module" crossorigin src="./assets/index-CP2i2tFx.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DTZ6G4vt.css">
+  <script type="module" crossorigin src="./assets/index-Cl_UICg6.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DeBfdhgR.css">
 </head>
 <body>
   <canvas id="c"></canvas>
